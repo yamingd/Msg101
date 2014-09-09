@@ -139,4 +139,8 @@ GsonTest2 Deserialize duration: 141ms. 70921 op/s
             Thread.sleep(1000);
         }
     }
+
+    public void testMsgpack3() throws Exception {
+        MsgPackTest.start3();
+    }
 }
