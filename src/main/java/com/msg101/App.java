@@ -16,8 +16,9 @@ public class App {
         GsonTest.start2();
         */
 
-        sizeTest();
+        //sizeTest();
 
+        MsgPackTest.start4();
     }
 
     public static void sizeTest(){
