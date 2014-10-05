@@ -3,7 +3,9 @@ package com.msg101;
 import org.msgpack.MessagePack;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 /**
@@ -117,6 +119,10 @@ public class MsgPackTest {
         src.setName(UUID.randomUUID().toString());
         src.setVersion(0.6);
         src.setNow(new Date().getTime());
+
+        List<byte[]> res = new ArrayList<byte[]>();
+        res.add(new byte[0]);
+        src.setTemp(res);
 
         long total = 10 * 1000;
         long t01 = System.currentTimeMillis();

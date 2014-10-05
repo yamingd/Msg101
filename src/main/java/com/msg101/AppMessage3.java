@@ -3,6 +3,7 @@ package com.msg101;
 import org.msgpack.annotation.MessagePackMessage;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by yaming on 14-9-5.
@@ -15,6 +16,7 @@ public class AppMessage3 implements Serializable {
     private String name;
     private double version;
     private long now;
+    private List<byte[]> temp;
 
     public String getName() {
         return name;
@@ -38,5 +40,13 @@ public class AppMessage3 implements Serializable {
 
     public void setNow(long now) {
         this.now = now;
+    }
+
+    public List<byte[]> getTemp() {
+        return temp;
+    }
+
+    public void setTemp(List<byte[]> temp) {
+        this.temp = temp;
     }
 }
